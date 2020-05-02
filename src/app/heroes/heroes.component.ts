@@ -3,11 +3,11 @@ import { Hero } from '../hero';
 import { HEROES } from '../mock-heros';
 
 @Component({
-  selector: 'app-heros',
-  templateUrl: './heros.component.html',
-  styleUrls: ['./heros.component.css']
+  selector: 'app-heroes',
+  templateUrl: './heroes.component.html',
+  styleUrls: ['./heroes.component.css']
 })
-export class HerosComponent implements OnInit {
+export class HeroesComponent implements OnInit {
 
   heroes = HEROES;
   selectedHero: Hero;
@@ -16,7 +16,6 @@ export class HerosComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
   }
